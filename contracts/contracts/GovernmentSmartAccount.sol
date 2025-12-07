@@ -35,18 +35,6 @@ contract GovernmentSmartAccount is AccessControl {
         uint256 indexed tokenId,
         address indexed candidate
     );
-    
-    event RoleGranted(
-        bytes32 indexed role,
-        address indexed account,
-        address indexed admin
-    );
-    
-    event RoleRevoked(
-        bytes32 indexed role,
-        address indexed account,
-        address indexed admin
-    );
 
     // Roles
     bytes32 public constant GOVERNMENT_OFFICIAL_ROLE = keccak256("GOVERNMENT_OFFICIAL_ROLE");
