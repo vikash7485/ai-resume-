@@ -1,0 +1,33 @@
+{
+  "name": "verified-resume-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for Verified AI Resume & Degree Checker on Flare Network",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network flare-testnet",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network flare-mainnet",
+    "verify": "hardhat verify --network",
+    "node": "hardhat node"
+  },
+  "keywords": [
+    "flare-network",
+    "solidity",
+    "smart-contracts",
+    "nft",
+    "verification"
+  ],
+  "author": "Flare Network Hackathon Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "ethers": "^6.8.0"
+  }
+}
+

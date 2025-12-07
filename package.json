@@ -1,0 +1,33 @@
+{
+  "name": "verified-ai-resume-checker",
+  "version": "1.0.0",
+  "description": "Government-grade fraud detection system for resumes and degrees built on Flare Network",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install && cd ../contracts && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "test": "npm run test:contracts && npm run test:backend",
+    "test:contracts": "cd contracts && npm test",
+    "test:backend": "cd backend && npm test",
+    "build": "cd frontend && npm run build && cd ../contracts && npm run compile"
+  },
+  "keywords": [
+    "flare-network",
+    "blockchain",
+    "resume-verification",
+    "fraud-detection",
+    "identity-verification",
+    "fassets",
+    "fdc",
+    "ftso",
+    "smart-contracts"
+  ],
+  "author": "Flare Network Hackathon Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+

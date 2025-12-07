@@ -1,0 +1,58 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# Build outputs
+dist/
+build/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Contracts
+contracts/artifacts/
+contracts/cache/
+contracts/typechain/
+
+# Database
+*.db
+*.sqlite
+
+# Uploads (but keep directory structure)
+backend/uploads/*
+!backend/uploads/.gitkeep
+temp/
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Hardhat
+cache/
+artifacts/
+typechain-types/
+
+# Flare network artifacts
+.flare/
+deployments/
+
+# Sensitive data
+secrets/
+*.pem
+*.key
